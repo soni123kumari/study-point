@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Projects - StudyPoint</title>
+    <style>
+ html, body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+    box-sizing: border-box; 
+    user-select: none; 
+} 
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    width: 250px;
+    padding: 15px;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 10px;
+    text-align: left;
+}
+
+.project-card button {
+    background: #ffcc00;
+    color: #141e30;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.project-card button:hover {
+    background: #e6b800;
+}
+
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .project-card {
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+  
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+    .projects {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #darkModeToggle {
+        font-size: 18px;
+    }
+}
+
+/* Large screen (desktop or tablet) */
+@media (min-width: 1025px) {
+    .projects {
+        flex-wrap: wrap;
+        
+    }
+    .project-card {
+        width: calc(33.33% - 20px);
+        padding: 20px;
+        background: linear-gradient(135deg, #141e30, #243b55);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="projects">
+        <div class="project-card" data-category="iot">
+            <h2>Weather Monitoring System</h2>
+            <p>Developed a weather monitoring system to detect the current weather.</p><br>
+            <button onclick="window.open('weather.html', '_blank')">View Project</button>
+        </div>
+        
+      
+        <div class="project-card" data-category="python">
+            <h2>Hotel Management System</h2>
+            <p>Hotel management system is a software that enhances customer experience and efficiency by automating the operations of hotels.</p><br>
+            <button onclick="window.open('san.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="python">
+            <h2>Library Management</h2>
+            <p>Manage the library: issue, update, return and more features in Python.</p><br>
+            <!-- <button onclick="window.open('project-data-scraper.html', '_blank')">View Project</button> -->
+            <button onclick="window.open('http://127.0.0.1:5000', '_blank')">View Project</button>
+
+        </div>
+        
+       
+        
+        <div class="project-card" data-category="c">
+            <h2>Banking System</h2>
+            <p>Developed a banking application with basic account management features using python.</p><br>
+            <!-- <button onclick="window.open('project-banking.html', '_blank')">View Project</button> -->
+            <button onclick="window.open('balance.py', '_blank')">View Project</button>
+
+        </div>
+        
+      
+        <div class="project-card" data-category="c#">
+            <h2>SOLAR SYSTEM</h2>
+            <p>Developed a  application for solar system.</p><br>
+            <button onclick="window.open('system.html', '_blank')">View Project</button>
+        </div>
+        
+       
+        
+      
+        
+        <div class="project-card" data-category="web">
+            <h2>Portfolio Website</h2>
+            <p>Designed a personal portfolio website using HTML, CSS, and JavaScript.</p><br>
+            <button onclick="window.open('portfolio.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="web">
+            <h2>E-commerce Website</h2>
+            <p>Developed a responsive e-commerce platform using HTML, CSS, and JavaScript.</p><br>
+            <button onclick="window.open('rose.html', '_blank')">View Project</button>
+        </div>
+        
+      
+        <div class="project-card" data-category="sql">
+            <h2>School Management System</h2>
+            <p>Implemented a relational database for school operations using SQL.</p><br>
+            <button onclick="window.open('p2,2.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="dsa">
+            <h2>Scientific Calculator</h2>
+            <p>Developed a Scientific Calculator for children using scientific calculate.</p><br>
+            <button onclick="window.open('CAL.HTML', '_blank')">View Project</button>
+        </div>
+        
+       
+          <div class="project-card" data-category="dsa">
+            <h2>Spotify</h2>
+            <p>Created a Sudoku game for sharpening the brain using DSA concepts.</p><br>
+            <button onclick="window.open('sp.html', '_blank')">View Project</button>
+        </div>
+        
+    </section>
+</body>
+</html>
