@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Developer</title>
+    <head>
+        <!-- Add Font Awesome CDN -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #acd6c8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            background: #f1eeee;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 900px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        /* Left Side */
+        .left-side {
+            flex: 1;
+            padding-right: 20px;
+            text-align: center;
+        }
+
+        .left-side img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #00bcd4;
+            transition: transform 0.3s ease;
+        }
+
+        .left-side img:hover {
+            transform: scale(1.1);
+        }
+
+        .left-side h3 {
+            font-size: 1.6rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .left-side p {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        /* Right Side */
+        .right-side {
+            flex: 2;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right-side h1 {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .right-side p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+       /* Social Links Styling */
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-links a {
+    padding: 10px 15px;
+    /*background-color: #00bcd4;*/
+    color: #00bcd4;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center; /* Align icons and text */
+}
+
+.social-links a i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2rem; /* Adjust icon size */
+}
+
+.social-links a:hover {
+    background-color: #8cb8b3;}
+       
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .card {
+                flex-direction: column;
+                padding: 20px;
+                width: 100%; /* Ensures the card takes up the full width on small screens */
+            }
+
+            .left-side {
+                padding-right: 0;
+                text-align: center;
+            }
+
+            .right-side {
+                padding-left: 0;
+            }
+
+            .right-side h1 {
+                font-size: 1.8rem;
+            }
+
+            .right-side p {
+                font-size: 1rem;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="left-side">
+                <img src="C:\Users\Dulhan Video Film\Pictures\IMG-20250325-WA0036.jpg" alt="Developer Photo">
+                <h3>Soni singh</h3>
+                <p>Phone: +91 8102604234</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/soni-kumari-b83968360/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/soni123kumari" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="mailto:sonisingh@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+                </div>
+                
+            </div>
+            <br>
+            <div class="right-side">
+                <h1>About Me</h1>
+                <p>I'm passionate about coding and helping others achieve their programming goals. I created StudyPoint to guide aspiring developers, sharing my expertise and experience to help you succeed.</p>
+                <p>With a love for teaching and a knack for problem-solving, I built StudyPoint to offer practical knowledge and support to anyone looking to grow in the tech industry.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
